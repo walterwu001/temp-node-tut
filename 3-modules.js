@@ -1,0 +1,11 @@
+// CommonJS, every file is module (by default)
+// Modules - Encapsulated Code (only share minimum)
+const names = require('./4-names')
+const sayHi1 = require('./5-utils')
+const data = require('./6-alternative-flavor')
+require('./7-mind-grenade')
+
+sayHi1('Susan')
+sayHi1(names.john)
+sayHi1(names.peter)
+sayHi1(data.singlePerson.name)
